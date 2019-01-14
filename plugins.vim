@@ -17,6 +17,7 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'Valloric/YouCompleteMe'
 
+Plug 'junegunn/goyo.vim'
 
 "List ends here. Plugins visible to Vim after this call.
 call plug#end()

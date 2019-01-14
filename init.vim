@@ -13,7 +13,7 @@ autocmd vimenter * NERDTree
 "       Close vim if only sidebar open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-
+let g:airline#extensions#tabline#enabled = 1
 
 "guess filetype
 filetype indent plugin on
