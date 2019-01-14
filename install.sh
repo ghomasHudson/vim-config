@@ -12,6 +12,9 @@ chmod u+x nvim.appimage
 #Python Binding
 pip3 install neovim
 
+#Install Plugin Manager
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 #Install Packages
 nvim +PluginInstall +qall
 
