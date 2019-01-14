@@ -4,7 +4,7 @@ curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimag
 chmod u+x nvim.appimage
 ./nvim.appimage
 
-#	ALT
+#	ALT on debian
 #sudo add-apt-repository ppa:neovim-ppa/stable
 #sudo apt-get update
 #sudo apt-get install neovim
@@ -17,4 +17,4 @@ nvim +PluginInstall +qall
 
 #YouCompleteMe Bindings
 cd plugged/YouCompleteMe
-./install.sh --js-completer
+./install.py --js-completer
