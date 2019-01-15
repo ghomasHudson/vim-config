@@ -13,6 +13,12 @@ autocmd vimenter * NERDTree
 "       Close vim if only sidebar open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+"When GoYo opened, start Limelight too
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+let g:limelight_conceal_ctermfg = 'DarkGray'
+
+"See what docs are open
 let g:airline#extensions#tabline#enabled = 1
 
 "guess filetype

@@ -17,7 +17,8 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'Valloric/YouCompleteMe'
 
+"Distraction free editing
 Plug 'junegunn/goyo.vim'
-
+Plug 'junegunn/limelight.vim' 
 "List ends here. Plugins visible to Vim after this call.
 call plug#end()
