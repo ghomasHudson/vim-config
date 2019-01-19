@@ -9,7 +9,12 @@ colorscheme minimalist
 "   For nerd tree sidebar
 map <C-n> :NERDTreeToggle<CR>
 "       Open on start
-autocmd vimenter * NERDTree
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"	Open folders with other bindings
+let NERDTreeMapActivateNode='<space>'
+let NERDTreeMapActivateNode='l'
 "       Close vim if only sidebar open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -61,15 +66,18 @@ set visualbell
 set cmdheight=2
 
 "show line numbers
-set number
+set number relativenumber
 set cursorline
 hi cursorline cterm=none
 hi cursorlinenr ctermfg=red
 
-set notimeout ttimeout ttimeoutlen=200
+"Toggle relative numbering, and set to absolute on loss of focus or insert mode
 
 "F11 to toggle 'paste' and 'nopaste'
 set pastetoggle=<F11>
+
+"Use system-wide clipboard
+set clipboard+=unnamedplus
 
 "Deal with tabs vs spaces
 set shiftwidth=4
