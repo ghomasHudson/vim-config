@@ -91,6 +91,9 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+nnoremap ; :
+"nnoremap : ;
+
 "Y follows D or C i.e. yank till EOL
 map Y y$
 
@@ -105,3 +108,6 @@ nnoremap <Down> :echoe "Use j"<CR>
 
 set mouse+=a
 
+"Hide error flash and beep
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
