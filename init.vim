@@ -23,6 +23,12 @@ autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 let g:limelight_conceal_ctermfg = 'DarkGray'
 
+" Enable Goyo by default for mutt writting
+" Goyo's width will be the line limit in mutt.
+autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
+autocmd BufRead,BufNewFile /tmp/neomutt* :Goyo
+
+
 "See what docs are open
 let g:airline#extensions#tabline#enabled = 1
 
