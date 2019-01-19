@@ -25,8 +25,11 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'airblade/vim-gitgutter'
 
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 
+Plug 'PotatoesMaster/i3-vim-syntax'
+
+Plug 'gioele/vim-autoswap'
 "Distraction free editing
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim' 

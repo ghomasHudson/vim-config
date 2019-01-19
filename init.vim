@@ -28,6 +28,7 @@ let g:limelight_conceal_ctermfg = 'DarkGray'
 autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
 autocmd BufRead,BufNewFile /tmp/neomutt* :Goyo
 
+set title titlestring=
 
 "See what docs are open
 let g:airline#extensions#tabline#enabled = 1
